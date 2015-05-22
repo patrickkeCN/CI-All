@@ -35,5 +35,6 @@ docker run \
 -e AUTH_TYPE=LDAP \
 -e LDAP_SERVER=${LDAP_SERVER} \
 -e LDAP_ACCOUNTBASE=${LDAP_ACCOUNTBASE} \
+-v /etc/localtime:/etc/localtime:ro \
 -d ${GERRIT_IMAGE_NAME}
 
